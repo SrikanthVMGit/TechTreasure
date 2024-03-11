@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192146484865",
+    "project_id": "tech-treasure-f9f3d",
+    "storage_bucket": "tech-treasure-f9f3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192146484865:android:9946b065243ce3b88de780",
+        "android_client_info": {
+          "package_name": "com.example.techtreasure"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKU8m7BbQsGR5vdI53-uECbfpPmWnF_1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
