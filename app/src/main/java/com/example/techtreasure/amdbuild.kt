@@ -3,7 +3,8 @@ import android.widget.Spinner
 import android.widget.AdapterView
 import android.widget.ImageView
 import android.view.View
-
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -16,6 +17,7 @@ class amdbuild : AppCompatActivity() {
         val spinner2 = findViewById<Spinner>(R.id.spinner2)
         val imageView1 = findViewById<ImageView>(R.id.imageView1)
         val imageView2 = findViewById<ImageView>(R.id.imageView2)
+        val completeButton = findViewById<Button>(R.id.completeButton)
 
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
@@ -46,6 +48,17 @@ class amdbuild : AppCompatActivity() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 // Handle case when nothing is selected
+            }
+        }
+
+        completeButton.setOnClickListener {
+            val selectedProcessor = spinner1.selectedItem.toString()
+            val selectedGraphicsCard = spinner2.selectedItem.toString()
+
+            if (selectedProcessor == "Processors" || selectedGraphicsCard == "Graphics Cards") {
+                Toast.makeText(this@amdbuild, "Please complete the build by selecting options for both CPU and GPU.", Toast.LENGTH_SHORT).show()
+            } else {
+                // Do something when the build is complete
             }
         }
     }
