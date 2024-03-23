@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- First string array -->
+    <string-array name="cpu">
+        <item>Processors</item> <!-- This will display "processors" as the first option -->
+        <item>Processor 1</item>
+        <item>Processor 2</item>
+        <item>Option 3</item>
+        <!-- Add more items if needed -->
+    </string-array>
+
+    <!-- Second string array -->
+    <string-array name="gpu">
+        <item>Graphics Cards</item> <!-- This will display "graphics cards" as the first option -->
+        <item>Graphics Card 1</item>
+        <item>Graphics Card 2</item>
+        <item>Option C</item>
+        <!-- Add more items if needed -->
+    </string-array>
+
+    <string-array name="ram">
+        <item>Ram</item> <!-- This will display "graphics cards" as the first option -->
+        <item>Option e</item>
+        <item>Option f</item>
+        <item>Option g</item>
+        <!-- Add more items if needed -->
+    </string-array>
+
+    <!-- Add more string arrays as needed -->
+</resources>

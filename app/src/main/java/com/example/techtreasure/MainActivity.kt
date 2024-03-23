@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Find the ImageViews by their IDs
-        val imageButton1: View = findViewById(R.id.imageButton1)
-        val imageButton2: View = findViewById(R.id.imageButton2)
+        val imageButton1: View = findViewById(R.id.imageButton2)
+        val imageButton2: View = findViewById(R.id.imageButton1)
 
         // Set click listeners for the ImageViews
         imageButton1.setOnClickListener {
