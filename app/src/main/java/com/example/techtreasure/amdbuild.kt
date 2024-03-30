@@ -131,7 +131,7 @@ class amdbuild : AppCompatActivity() {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 if (selectedItem != "MotherBoard") {
                     // Fetch price based on selected item position
-                    val price = ramPrices[position - 1] // Adjust index because of the header item
+                    val price = mbPrices[position - 1] // Adjust index because of the header item
                     totalPrice += price.substring(1).replace(",", "").toInt()
                     totalPriceTextView.text = "Total Price: ₹$totalPrice"
                     // Display corresponding image
@@ -156,7 +156,7 @@ class amdbuild : AppCompatActivity() {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 if (selectedItem != "SSD") {
                     // Fetch price based on selected item position
-                    val price = ramPrices[position - 1] // Adjust index because of the header item
+                    val price = ssdPrices[position - 1] // Adjust index because of the header item
                     totalPrice += price.substring(1).replace(",", "").toInt()
                     totalPriceTextView.text = "Total Price: ₹$totalPrice"
                     // Display corresponding image
@@ -181,7 +181,7 @@ class amdbuild : AppCompatActivity() {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 if (selectedItem != "Power Supply") {
                     // Fetch price based on selected item position
-                    val price = ramPrices[position - 1] // Adjust index because of the header item
+                    val price = psuPrices[position - 1] // Adjust index because of the header item
                     totalPrice += price.substring(1).replace(",", "").toInt()
                     totalPriceTextView.text = "Total Price: ₹$totalPrice"
                     // Display corresponding image
@@ -206,7 +206,7 @@ class amdbuild : AppCompatActivity() {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 if (selectedItem != "Cabinet") {
                     // Fetch price based on selected item position
-                    val price = ramPrices[position - 1] // Adjust index because of the header item
+                    val price = pcasePrices[position - 1] // Adjust index because of the header item
                     totalPrice += price.substring(1).replace(",", "").toInt()
                     totalPriceTextView.text = "Total Price: ₹$totalPrice"
                     // Display corresponding image

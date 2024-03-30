@@ -18,172 +18,163 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="30dp"
-        android:paddingTop="30dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="30dp"
-        android:textAlignment="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:textAlignment="center">
 
-    <TextView
-        android:id="@+id/amdtext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Click Below For AMD Build"
-        android:textColor="@color/red"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/amdtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Click Below For AMD Build"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 1"
-        android:scaleType="centerCrop"
-        android:src="@drawable/cpuu" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jjj" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:entries="@array/cpu"
-        android:prompt="@string/image1_text" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:entries="@array/icpu"
+                android:prompt="@string/image1_text" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/gpuu" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iii" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:entries="@array/gpu"
-        android:prompt="@string/image2_text" />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/igpu"
+                android:prompt="@string/image2_text" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ram" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lll" />
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:entries="@array/ram"
-        android:prompt="@string/image2_text" />
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/ram"
+                android:prompt="@string/image2_text" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mb" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mb" />
 
-    <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:entries="@array/mb"
-        android:prompt="@string/image2_text" />
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/mb"
+                android:prompt="@string/image2_text" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ssdd" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kkk" />
 
-    <Spinner
-        android:id="@+id/spinner5"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:entries="@array/ssd"
-        android:prompt="@string/image2_text" />
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/ssd"
+                android:prompt="@string/image2_text" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/psuu" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/psuu" />
 
-    <Spinner
-        android:id="@+id/spinner6"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:entries="@array/psu"
-        android:prompt="@string/image2_text" />
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/psu"
+                android:prompt="@string/image2_text" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:contentDescription="Description of Image 2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/c" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Description of Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/c" />
 
-    <Spinner
-        android:id="@+id/spinner7"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:entries="@array/pcase"
-        android:prompt="@string/image2_text" />
-
-
+            <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/pcase"
+                android:prompt="@string/image2_text" />
 
 
+            <TextView
+                android:id="@+id/totalPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price: ₹0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView3" />
 
+            <Button
+                android:id="@+id/completeButton"
+                android:layout_width="214dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="96dp"
+                android:text="Done" />
 
-
-
-    <TextView
-        android:id="@+id/totalPriceTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Price: ₹0"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView3" />
-
-    <Button
-        android:id="@+id/completeButton"
-        android:layout_width="214dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="96dp"
-        android:text="Done" />
-
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

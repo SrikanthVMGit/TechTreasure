@@ -93,4 +93,29 @@
         <item>₹4,500</item> <!-- Price for 32GB -->
     </string-array>
 
+    <string-array name="icpu">
+        <item>Processors</item>
+        <item>Intel i5</item>
+        <item>Intel i7</item>
+        <item>Intel i9</item>
+    </string-array>
+
+    <string-array name="icpu_prices">
+        <item>₹18,000</item> <!-- Price for Ryzen 5600h -->
+        <item>₹35,000</item> <!-- Price for Ryzen 7700x -->
+        <item>₹60,000</item> <!-- Price for Ryzen 9900 -->
+    </string-array>
+
+    <string-array name="igpu">
+        <item>Graphics Cards</item>
+        <item>GTX 1660</item>
+        <item>RTX 3050</item>
+        <item>RTX 4080</item>
+    </string-array>
+
+    <string-array name="igpu_prices">
+        <item>₹20,000</item> <!-- Price for Radeon 5600 -->
+        <item>₹35,000</item> <!-- Price for Radeon 6600X -->
+        <item>₹88,000</item> <!-- Price for Radeon 7700XT -->
+    </string-array>
 </resources>
