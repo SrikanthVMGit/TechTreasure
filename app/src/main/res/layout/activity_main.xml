@@ -8,9 +8,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/homebg">
 
-    <!-- Tech Treasure Home Page Layout -->
-
-
     <ImageView
         android:id="@+id/header"
         android:layout_width="189dp"

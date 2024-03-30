@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".amdbuild">
+    tools:context=".amdbuild"
+    android:background="@drawable/builds">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -23,20 +24,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="30dp"
-            android:paddingTop="30dp"
-            android:paddingRight="30dp"
-            android:paddingBottom="30dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="0dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="50dp"
             android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Tech Treasure"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:paddingLeft="45dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/amdtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Click Below For AMD Build"
+                android:text="Choose your AMD Build"
                 android:textColor="@color/red"
                 android:textSize="20sp"
+                android:paddingLeft="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
