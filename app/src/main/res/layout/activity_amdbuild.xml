@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".amdbuild"
-    android:background="@drawable/builds">
+    android:background="@drawable/bgh">
 
     <ScrollView
         android:id="@+id/scrollView"
