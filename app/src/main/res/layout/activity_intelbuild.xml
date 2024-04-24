@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".intelbuild"
-    android:background="@drawable/bgh">
+    android:background="@drawable/bg123">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -51,7 +51,7 @@
                 android:text="Choose your Intel Build"
                 android:textColor="@color/blue"
                 android:textSize="20sp"
-                android:paddingLeft="25dp"
+                android:paddingLeft="45dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
