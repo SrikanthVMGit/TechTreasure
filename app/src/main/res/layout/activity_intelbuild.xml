@@ -176,6 +176,8 @@
                 android:text="Total Price: ₹0"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="80dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -186,6 +188,8 @@
                 android:layout_width="214dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="96dp"
+                android:layout_marginLeft="39dp"
+
                 android:text="Done" />
 
         </LinearLayout>

@@ -252,6 +252,5 @@ class amdbuild : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-
     }
 }

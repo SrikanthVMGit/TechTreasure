@@ -1,8 +1,10 @@
 package com.example.techtreasure
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.techtreasure.databinding.ActivityLoginBinding
 
 class Report : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +30,7 @@ class Report : AppCompatActivity() {
         val powerSupplyTextView = findViewById<TextView>(R.id.powerSupplyTextView)
         val cabinetTextView = findViewById<TextView>(R.id.cabinetTextView)
         val totalPriceTextView = findViewById<TextView>(R.id.totalPriceTextView)
+        val homeRedirectTextView = findViewById<TextView>(R.id.HomeRedirect)
 
         processorTextView.text = "Processor: $selectedProcessor"
         graphicsCardTextView.text = "Graphics Card: $selectedGraphicsCard"
@@ -37,5 +40,12 @@ class Report : AppCompatActivity() {
         powerSupplyTextView.text = "Power Supply: $selectedPowerSupply"
         cabinetTextView.text = "Cabinet: $selectedCabinet"
         totalPriceTextView.text = "Total Price: ₹$totalPrice"
+
+        homeRedirectTextView.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish() // Optional: Finish this activity to prevent going back to it when pressing back button
+        }
     }
+
 }

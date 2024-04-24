@@ -1,4 +1,5 @@
 package com.example.techtreasure
+import android.content.Intent
 import android.widget.Spinner
 import android.widget.AdapterView
 import android.widget.ImageView
@@ -240,9 +241,16 @@ class intelbuild : AppCompatActivity() {
                 selectedCabinet == "Cabinet") {
                 Toast.makeText(this@intelbuild, "Please complete the build by selecting options for all components.", Toast.LENGTH_SHORT).show()
             } else {
-                // Calculate total price and perform any other action when the build is complete
-                // Here, you can calculate the total price and any other actions you want to perform when the build is complete
-                // You can access the selected items from the spinners and perform further operations
+                val intent = Intent(this@intelbuild, Report::class.java)
+                intent.putExtra("Processor", selectedProcessor)
+                intent.putExtra("GraphicsCard", selectedGraphicsCard)
+                intent.putExtra("RAM", selectedRAM)
+                intent.putExtra("Motherboard", selectedMotherboard)
+                intent.putExtra("SSD", selectedSSD)
+                intent.putExtra("PowerSupply", selectedPowerSupply)
+                intent.putExtra("Cabinet", selectedCabinet)
+                intent.putExtra("TotalPrice", totalPrice) // Assuming totalPrice is an integer
+                startActivity(intent)
             }
         }
     }
